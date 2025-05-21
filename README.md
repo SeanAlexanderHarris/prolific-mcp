@@ -8,9 +8,9 @@ This Model Context Protocol (MCP) server provides a bridge between an agent and 
 - Automated participant recruitment and data collection
 - Integration with Prolific's tools and participant pool
 
-The server was enabled and inspired by work that went into the Prolific CLI [Prolific CLI](https://github.com/benmatselby/prolificli) and attempts to allow data collectors to interact via agents with any functionality provided the [Prolific API](https://docs.prolific.com/docs/api-docs/public/).
+The server was enabled and inspired by work that went into the [Prolific CLI](https://github.com/benmatselby/prolificli) and attempts to allow data collectors to interact via agents with any functionality provided the [Prolific API](https://docs.prolific.com/docs/api-docs/public/).
 
-It is built with TypeScript and packaged as a Docker container for easy deployment leaning heavily on the TypeScript [SDK](https://github.com/modelcontextprotocol/typescript-sdk).
+It is built with TypeScript and packaged as a Docker container for easy deployment leaning heavily on the MCP TypeScript [SDK](https://github.com/modelcontextprotocol/typescript-sdk).
 
 More information about the Model Context Protocol is available [here](https://github.com/modelcontextprotocol).
 
