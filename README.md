@@ -62,7 +62,7 @@ The following environment variables are required for the MCP server to function 
 - **PROLIFIC_TOKEN** (required)
   - Your Prolific API token. Used for authenticating all API requests.
 - **PROLIFIC_URL** (optional)
-  - The base URL for the Prolific API. Defaults to `https://api.prolific.co` if not set.
+  - The base URL for the Prolific API. Defaults to `https://api.prolific.com` if not set.
 
 ### Validation
 
