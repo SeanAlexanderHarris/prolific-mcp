@@ -51,6 +51,34 @@ You must then add the Prolific MCP server config JSON.
 }
 ```
 
+### For VS Code
+
+Open your user settings (Command palette > Preferences: Open User Settings (JSON)), and then add this snippet to your `mcp` configuration:
+
+```json
+  "mcp": {
+    "inputs": [
+      ..,
+      {
+        "type": "promptString",
+        "id": "prolific_token",
+        "description": "Prolific API Key",
+        "password": true
+      }
+    ],
+    "servers": {
+      ..,
+      "prolific": {
+        "command": "docker",
+        "args": ["run", "-i", "--rm", "-e", "PROLIFIC_TOKEN", "mcp/prolific"],
+        "env": {
+          "PROLIFIC_TOKEN": "${input:prolific_token}"
+        }
+      }
+    }
+  }
+```
+
 ### Requirements
 
 - Docker
