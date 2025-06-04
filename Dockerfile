@@ -1,4 +1,4 @@
-FROM node:20-slim
+FROM node:22-slim
 LABEL maintainer="Sean Harris <sean.alexander.harris.29@googlemail.com>"
 
 ENV APPNAME=prolific-mcp-server
