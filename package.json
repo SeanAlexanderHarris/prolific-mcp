@@ -1,12 +1,13 @@
 {
   "name": "prolific-mcp-server",
   "version": "1.0.0",
-  "description": "A Model Context Protocol server for the Prolifc platform",
+  "description": "A Model Context Protocol server for the Prolific Platform",
   "main": "dist/index.mjs",
   "scripts": {
     "test": "vitest run",
     "build": "tsc",
-    "test:unit": "vitest run --exclude mcpServer.integration.test.ts"
+    "test:unit": "vitest run --exclude mcpServer.integration.test.ts",
+    "docker:build": "docker build -t mcp/prolific ."
   },
   "keywords": [],
   "author": "",
