@@ -81,6 +81,12 @@ The following environment variables are required for the MCP server to function 
 
 ## Docker Usage
 
+To build the image:
+
+```shell
+docker build -t mcp/prolific .
+```
+
 When running the MCP server in Docker, you must pass the required environment variables into the container. For example:
 
 ```sh
