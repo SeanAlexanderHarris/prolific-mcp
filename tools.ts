@@ -294,3 +294,12 @@ export const listRequirementsSchema = {
 };
 export const listRequirementsDescription =
   "List all eligibility requirements available for your study.";
+
+
+// 13. Who Am I?
+export interface WhoAmIArgs {}
+export const whoAmISchema = {
+  type: "object",
+  properties: {},
+};
+export const whoAmIDescription = "Get information about the current user.";

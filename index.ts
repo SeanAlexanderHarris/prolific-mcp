@@ -31,6 +31,8 @@ import {
   listFilterSetsDescription,
   listRequirementsSchema,
   listRequirementsDescription,
+  whoAmISchema,
+  whoAmIDescription
 } from "./tools.js";
 import { ProlificClient } from "./prolificClient.js";
 
@@ -96,6 +98,11 @@ const tools = [
     description: listRequirementsDescription,
     inputSchema: listRequirementsSchema,
   },
+  {
+    name: "prolific_who_am_i",
+    description: whoAmIDescription,
+    inputSchema: whoAmISchema,
+  }
 ];
 
 async function main() {
@@ -218,6 +225,12 @@ async function main() {
           }
           case "prolific_list_requirements": {
             const response = await prolificClient.listRequirements();
+            return {
+              content: [{ type: "text", text: JSON.stringify(response) }],
+            };
+          }
+          case "prolific_who_am_i": {
+            const response = await prolificClient.whoAmI();
             return {
               content: [{ type: "text", text: JSON.stringify(response) }],
             };

@@ -296,4 +296,17 @@ export class ProlificClient {
     }
     return await res.json();
   }
+
+  // 13. Who am I?
+  async whoAmI(): Promise<any> {
+    log("Fetching user info");
+    const url = `${this.baseUrl}/api/v1/users/me/`;
+    const res = await fetch(url, { headers: this.getHeaders() });
+    if (!res.ok) {
+      const text = await res.text();
+      log(`Failed to fetch user info: ${res.status} ${text}`);
+      throw new Error(`Failed to fetch user info: ${res.status} ${text}`);
+    }
+    return await res.json();
+  }
 }
