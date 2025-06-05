@@ -42,67 +42,106 @@ const tools = [
     name: "prolific_list_studies",
     description: listStudiesDescription,
     inputSchema: listStudiesSchema,
+    annotations: {
+      title: "List Studies",
+    },
   },
   {
     name: "prolific_create_study",
     description: createStudyDescription,
     inputSchema: createStudySchema,
+    annotations: {
+      title: "Create new Study",
+    },
   },
   {
     name: "prolific_list_submissions",
     description: listSubmissionsDescription,
     inputSchema: listSubmissionsSchema,
+    annotations: {
+      title: "List Submissions for a Study",
+    },
   },
   {
     name: "prolific_view_study",
     description: viewStudyDescription,
     inputSchema: viewStudySchema,
+    annotations: {
+      title: "View a Study",
+    },
   },
   {
     name: "prolific_duplicate_study",
     description: duplicateStudyDescription,
     inputSchema: duplicateStudySchema,
+    annotations: {
+      title: "Duplicate a Study",
+    },
   },
   {
     name: "prolific_transition_study",
     description: transitionStudyDescription,
     inputSchema: transitionStudySchema,
+    annotations: {
+      title: "Transition a Study",
+    },
   },
   {
     name: "prolific_list_workspaces",
     description: listWorkspacesDescription,
     inputSchema: listWorkspacesSchema,
+    annotations: {
+      title: "List all Workspaces",
+    },
   },
   {
     name: "prolific_list_participant_groups",
     description: listParticipantGroupsDescription,
     inputSchema: listParticipantGroupsSchema,
+    annotations: {
+      title: "List all Participant Groups",
+    },
   },
   {
     name: "prolific_list_campaigns",
     description: listCampaignsDescription,
     inputSchema: listCampaignsSchema,
+    annotations: {
+      title: "List all Campaigns",
+    },
   },
   {
     name: "prolific_list_filters",
     description: listFiltersDescription,
     inputSchema: listFiltersSchema,
+    annotations: {
+      title: "List all Filters",
+    },
   },
   {
     name: "prolific_list_filter_sets",
     description: listFilterSetsDescription,
     inputSchema: listFilterSetsSchema,
+    annotations: {
+      title: "List all Filter Sets",
+    },
   },
   {
     name: "prolific_list_requirements",
     description: listRequirementsDescription,
     inputSchema: listRequirementsSchema,
+    annotations: {
+      title: "List all Requirements",
+    },
   },
   {
     name: "prolific_who_am_i",
     description: whoAmIDescription,
     inputSchema: whoAmISchema,
-  }
+    annotations: {
+      title: "Who am I?",
+    },
+  },
 ];
 
 async function main() {
